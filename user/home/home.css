@@ -1,0 +1,295 @@
+body{
+    position: relative;
+    overflow-y: auto; 
+    overflow-x: hidden; 
+}
+.tit{
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  color: #d0c390 !important;
+  font-size: 170%;
+  font-weight: 700;
+  text-decoration: none;
+}
+.main-btn{
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  border: #d0c390 solid 1px;
+  background-color: transparent;
+  color: #d0c390 !important;
+  font-size: 120%;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 1s ease-in-out;
+  position: relative; 
+      animation: upDown 2s ease-in-out infinite; 
+      
+}
+.main-btn:hover{
+    color:#a18f60 !important;
+  
+
+}
+@keyframes upDown {
+    0%, 100% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-10px); 
+    }
+  }
+.nav-items,nav{
+    display: flex;
+    flex-direction: row;
+    margin-left: 8%;
+    margin-right: 0%;
+    
+}
+.info{
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #d0b990 !important;
+  font-size: 150%;
+  font-weight: 700;
+}
+.tit:hover{
+    color:#88764f !important;
+
+}
+
+.contact:hover{
+   
+    color: #310404 !important;
+}
+.contact{
+    color:#803333;
+    font-size: 130%;
+    font-weight: 500;
+    background-color: #d0c390;
+    text-decoration: none;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 32px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+nav
+{
+    background: linear-gradient(rgba(91, 17, 17, 0.5),rgb(95, 16, 16,0.5));
+    /* position: fixed; */
+    width: 100%;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+.d1{
+    color: #8e2222 !important ;
+   
+}
+.cinzel-decorative-regular {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    color: #d3c793 !important;
+    font-style: normal;
+    font-size: 600%;
+    text-decoration: none;
+     
+  }
+.main
+{
+    width:100vw;
+    height: 100vh;
+    background: 
+    linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4))
+    ,url(imgs/InteriorDesign_OulipOVeerays-5\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.d2{
+    background-color: #102315;
+    width:100%;
+    height: 50vh;
+}
+.cns{
+    background-color:#0d1d12 ;
+    width:40%;
+    height: 46%;
+    border-radius: 50%;
+}
+.fnt3 {
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #9e956f !important;
+    text-decoration: none;
+
+ }
+ .charmonman-bold {
+    font-family: "Charmonman", serif;
+    font-size: 140%;
+    color: #d3c793 !important;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .c4{
+    display: flex;
+    flex-direction: column; 
+    text-align: center;    
+}
+.why{
+   background: linear-gradient(to right,#4d1010,#260101ff);
+    width: 100vw;
+    height: 80vh;
+   
+    background-size: 400% 400%;
+
+}
+.sec2{
+    height: 90vh;
+    width: 50%;
+    margin-top: 10%;
+    /* background-color: #7b1616; */
+     
+     
+}
+.sec2-img{
+    border-radius: 50%;
+}
+.image-wrapper{
+    background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+ 
+    border-radius: 50% !important;
+    background-repeat: no-repeat;
+}
+@keyframes gradient-animation {
+    0% {
+        background: linear-gradient(to right,#4d1010,#260101ff);
+    }
+    50% {
+        background: linear-gradient(to right, #210a0a,rgb(100, 11, 11));
+    }
+    100% {
+        background: linear-gradient(to right, #4d1010,#260101ff);
+    }
+}
+.charmonman {
+    font-family: "Charmonman", serif;
+    font-size: 300%;
+    color: #d3c793 !important;
+    font-weight: bolder;
+    font-style: normal;
+    border-bottom: #a18f60  double 2px;
+  }
+  .charmonma {
+    font-family: "Charmonman", serif;
+    font-size: 276%;
+    color: #d3c793 !important;
+    font-weight: bolder;
+    font-style: normal;
+    
+  }
+  .fnt {
+    margin-top: 6%;
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 180%;
+    font-style: normal;
+    color: #cbc08f !important;
+    text-decoration: none;
+   
+ }
+
+  
+footer {
+    background-color:#0d1d12;
+    color: #f2f2f2;
+    padding: 3rem 1rem;
+    width: 100%;
+  }
+  footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   
+  }
+  footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    
+  }
+  footer .col {
+    flex: 1 1 250px; 
+    min-width: 250px;
+  }
+  footer .col h3 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+    color: #d8b67b; 
+    position: relative;
+  }
+  footer .col h3::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #d8b67b;
+    margin-top: 5px;
+  }
+  footer .col p {
+    font-size: 14px;
+    margin-bottom: 1rem;
+    color: #aaa;
+  }
+  footer .social a {
+    color: #d8b67b;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  footer .social a:hover {
+    transform: scale(1.2);
+    color: #fff;
+  }
+  footer .links a {
+    display: block;
+    text-decoration: none;
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  footer .links a:hover {
+    color: #d8b67b;
+    transform: translateX(5px);
+  }
+  footer .contact-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  footer .contact-details i {
+    font-size: 18px;
+    color: #d8b67b;
+  }
+  

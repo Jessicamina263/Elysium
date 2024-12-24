@@ -1,0 +1,138 @@
+body {
+    background-color: #e9e3be;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .sec1 {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .sec2 {
+    color: #3d0d18;
+  }
+  
+  .mg {
+    height: 100vh !important;
+    width: 100%;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+      url(img/imgs/InteriorDesign_OulipOVeerays-8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    
+      align-items: center;
+      flex-direction: column;
+  }
+  
+  .log {
+    color: #3f1010;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    font-weight: bolder;
+    font-style: normal;
+    margin-bottom: 0% ;
+    margin-top: 5%;
+    font-size: 310%;
+  }
+  
+  .login-form {
+    margin-left: 9%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    border-radius: 8px;
+    width: 70%;
+  }
+  
+  .login-form h2 {
+   
+    text-align: center;
+  }
+  
+  .login-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  margin-top: 3%;
+  background:linear-gradient(rgba(208, 185, 144, 0.5)
+,rgba(208, 185, 144, 0.5)
+);
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .info{
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #d0b990 !important;
+  font-size: 150%;
+  font-weight: 700;
+}
+  .cinzel-decorative-regular {
+    font-family: "Cinzel Decorative", serif;
+    margin-bottom: 0% !important;
+   
+    margin-left: 0%;
+    margin-top: 2%;
+    font-weight: 400;
+    text-align: center;
+  font-weight: bold;
+  color: #d3c793 !important;
+    font-style: normal;
+    font-size: 500%;
+    text-decoration: none;
+     
+  }
+  .login-form button {
+    width: 105%;
+    padding: 0.5%;
+    margin-top: 7%;
+   
+   margin-bottom: 7%;
+    background-color: #3d0d0d;
+    color: #d0b990;
+    font-family: "Playfair Display", serif;
+    border: none;
+    font-size: 140%;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .login-form label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 140%;
+    display: block;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 5px;
+    color: #3f1010;
+  }
+  
+  .login-form button:hover {
+    background-color: #2a0a0a;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.9em;
+  }
+  
+  
+  .d-flex {
+    display: flex;
+    /* height: 100vh; */
+  }
+  

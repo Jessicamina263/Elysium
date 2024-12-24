@@ -1,0 +1,171 @@
+html
+{
+    scroll-behavior: smooth;
+}
+body 
+{
+    font-family: 'Playfair Display', serif;
+    background-color: #f4e8dc;
+    color: #3d0d18;
+    margin: 0;
+    padding: 0;
+}
+.header h1 
+{
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2.5rem;
+    color: #803333;
+    position: absolute;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    top: 31%;
+    left: 27%;
+}
+.header h2.title 
+{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #3d0d18;
+    margin-bottom: 20px;
+}
+.container 
+{
+    background: white;
+    padding: 40px 50px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 1000px;
+    height: 800px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+.container input
+{
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid rgba(161, 161, 161, 0.76);
+}
+.container input:focus
+{
+    border-color: #3d0d18;
+    outline: none;
+    box-shadow: 0 0 8px #3d0d18;
+}
+.subbutton
+{
+    background-color: #571222;
+    color: #fef8eb;
+    border: 0;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+}
+.subbutton:hover
+{
+    background-color: #3d0d18;
+}
+.center-btn-container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.dropdown-toggle 
+{
+    background-color: #571222;
+    border: 0;
+    color: white;
+}
+.dropdown-toggle:focus, .dropdown-toggle:active 
+{
+    background-color: #3d0d18;
+    border: 0;
+}
+.dropdown-menu 
+{
+    background-color: white;
+}
+.dropdown-item 
+{
+    background-color: white;
+    color: black;
+}
+.dropdown-item:hover 
+{
+    background-color: #d1d1d1be;
+}
+.optionsbtns
+{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.optionsbtns i
+{
+    font-size: 22px;
+    color: #571222;
+}
+.divbtns
+{
+    position: absolute;
+    left: 21.2%;
+    top: 13%;
+}
+.optionsbtns:hover
+{
+    background-color: #bebebe;
+}
+.search-container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result-table 
+{
+    display: none;
+}
+.table-simple 
+{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
+    color: #3d0d18;
+}
+.table-simple th 
+{
+    background-color: #803333;
+    color: #f4e8dc;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    border: none;
+}
+.table-simple td 
+{
+    padding: 10px;
+    text-align: center;
+    color: #3d0d18;
+    border: none;
+}
+.table-simple thead tr 
+{
+    border-bottom: 1px solid #803333;
+}
+.table-simple tbody tr:nth-of-type(odd) 
+{
+    background-color: #f2f2f2;
+}
+.table-simple tbody tr:nth-of-type(even) 
+{
+    background-color: #ffffff;
+}
+.table-simple tbody tr 
+{
+    border-bottom: 1px solid #803333;
+}

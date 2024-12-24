@@ -1,0 +1,329 @@
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    color: black;
+    background-color: #3d0d0d;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.imgstyle
+{
+    width: auto;
+    height: 250px;
+    display: inline-block;
+}
+.tit
+{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: #d0c390 !important;
+    font-size: 170%;
+    font-weight: 700;
+    text-decoration: none;
+}
+.nav-items,nav
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 8%;
+    margin-right: 0%;
+    z-index: 6000;
+    
+}
+.info
+{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: #dcddb4 !important;
+    font-size: 150%;
+    font-weight: 700;
+}
+.tit:hover
+{
+    color:#88764f !important;
+
+}
+.contact:hover
+{
+   
+    color: #310404 !important;
+}
+.contact
+{
+    color:#803333;
+    font-size: 130%;
+    font-weight: 500;
+    background-color: #d0c390;
+    text-decoration: none;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 32px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+nav
+{
+    background: linear-gradient(rgba(91, 17, 17, 0.5),rgb(95, 16, 16,0.5));
+    width: 100%;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 9999; 
+}
+.d1
+{
+    color: #8e2222 !important ;
+   
+}
+.cinzel-decorative-regular 
+{
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    color: #d3c793 !important;
+    font-style: normal;
+    font-size: 600%;
+    text-decoration: none;
+     
+}
+.navi
+{
+    width: 100% !important;
+}
+
+
+.arcanimate 
+{
+    background-color: transparent;
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    position: absolute;
+    top: 70%;
+    left: -8%;
+    box-sizing: border-box;
+    border: 100px solid transparent; /* Make the base border transparent */
+    background: linear-gradient(#3d0d0d, #3d0d0d) padding-box, linear-gradient(125deg, rgba(244,232,220,1), rgba(120,88,57,1) 70%) border-box;
+    z-index: -1; /* Place behind .main */
+}
+.main 
+{
+    width: 100vw;
+    height: 100vh;
+    position: relative; /* Create stacking context for .main */
+    background: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url(assets/Interior-Design-The-Bar.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0; /* Ensure it’s above .arcanimate */
+}
+
+.main-content 
+{
+    flex-grow: 1;
+}
+.proddetails
+{
+    width: 1200px;
+    background-color: transparent;
+    color: white;
+    z-index: 6000;
+    position: absolute;
+    top: 105%;
+    left: 10%;
+}
+
+.card
+{
+    width: 80%; 
+    height: 100%; 
+    border: 0;
+    background-color: transparent;
+    color: white;
+}
+.icon-active 
+{
+    background-color: rgb(194, 173, 152);
+    border-radius: 50%;
+    padding: 10px;
+}
+.carousel-container 
+{
+    display: none;
+}
+.carousel-container.active 
+{
+    display: block;
+}
+.carousel-control-prev,
+.carousel-control-next 
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.carousel-control-prev 
+{
+    top: 75%;
+    left: 0%;
+}
+.carousel-control-next 
+{
+    top: 75%;
+    right: 0%;
+}
+/* Center the filtered carousel container */
+#filteredCarousel 
+{
+    display: flex;
+    justify-content: center; 
+    align-items: center; /* Vertically center the carousel */
+    height: 100vh; /* Take full height of the viewport */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-grow: 1; 
+    width: 100%;
+    margin-top: 10%;
+}
+/* Smaller images in the filtered carousel */
+#filteredCarousel .card-img-top 
+{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    opacity: 0.95;
+    margin-left: 15%;
+}
+
+/* Center carousel content within the carousel container */
+#filteredCarouselContent 
+{
+    display: flex;
+    margin-left: 8%;
+}
+.rate-box 
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    width: 60px;
+    margin-left: 45%;
+    border-radius: 20px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+
+
+footer 
+{
+    margin-top: auto;
+    background-color:#102315;
+    color: #f2f2f2;
+    padding: 3rem 1rem;
+    width: 100%;
+}
+footer .container 
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   
+}
+footer .row 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    
+}
+footer .col 
+{
+    flex: 1 1 250px; 
+    min-width: 250px;
+}
+footer .col h3 
+{
+    font-size: 18px;
+    margin-bottom: 1rem;
+    color: #d8b67b; 
+    position: relative;
+}
+footer .col h3::after 
+{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #d8b67b;
+    margin-top: 5px;
+}
+footer .col p 
+{
+    font-size: 14px;
+    margin-bottom: 1rem;
+    color: #aaa;
+}
+footer .social a 
+{
+    color: #d8b67b;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+footer .social a:hover 
+{
+    transform: scale(1.2);
+    color: #fff;
+}
+footer .links a 
+{
+    display: block;
+    text-decoration: none;
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+footer .links a:hover 
+{
+    color: #d8b67b;
+    transform: translateX(5px);
+}
+footer .contact-details 
+{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+footer .contact-details i 
+{
+    font-size: 18px;
+    color: #d8b67b;
+}
