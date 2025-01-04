@@ -10,7 +10,7 @@ RUN a2enmod rewrite
 # Set the ServerName directive to suppress the warning
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
-# Set the DirectoryIndex to default to the home.php in user folder
+# Set the DirectoryIndex to default to the home.php in the user folder
 RUN echo "DirectoryIndex user/home/home.php" >> /etc/apache2/apache2.conf
 
 # Copy your application code into the container
