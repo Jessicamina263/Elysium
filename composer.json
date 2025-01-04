@@ -1,0 +1,9 @@
+{
+    "name": "your-username/elysium",
+    "description": "A digital platform for ELYSIUM, a cafe and restaurant.",
+    "type": "project",
+    "require": {
+      "php": ">=7.3.0"
+    }
+  }
+  
