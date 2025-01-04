@@ -1,8 +1,8 @@
-#ELYSIUM (Cafe and Restaurant)
+# ELYSIUM (Cafe and Restaurant)
 Welcome to ELYSIUM, a cafe and restaurant experience designed to provide a unique and memorable dining atmosphere. Our goal is to combine exceptional culinary offerings with a relaxing ambiance that caters to every taste and occasion.
 
-#Contributors
-#The success of this project is a result of the hard work and dedication of the following contributors:
+# Contributors
+# The success of this project is a result of the hard work and dedication of the following contributors:
 
 Basmalla Mahmoud
 GitHub: @basmallaaaaaa
