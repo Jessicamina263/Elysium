@@ -7,6 +7,9 @@ RUN docker-php-ext-install pdo pdo_mysql
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
 
+# Set the ServerName directive to suppress warning
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+
 # Copy your application code into the container
 COPY . /var/www/html/
 
