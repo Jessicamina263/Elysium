@@ -1,6 +1,6 @@
 # ELYSIUM (Cafe and Restaurant)
 
-Welcome to # ELYSIUM, an innovative dining and cafe experience designed to combine culinary excellence with a relaxing ambiance. This repository houses the digital platform for ELYSIUM, offering both user and administrative functionalities.
+Welcome to *ELYSIUM*, an innovative dining and cafe experience designed to combine culinary excellence with a relaxing ambiance. This repository houses the digital platform for ELYSIUM, offering both user and administrative functionalities.
 
 
 # *Table of Contents*
