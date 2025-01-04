@@ -23,7 +23,7 @@
       <nav class="row m-0" style="color: transparent; background-color:transparent">
         <div class="container-fluid  my-1 row  my-2 justify-content-center align-items-center ms-5">
           <div class=" ps-5 pe-3" style="margin-left: 18%">
-              <a href="../about/about.php" class="tit">About us</a>
+              <a href="/restaurant/user/about/about.php" class="tit">About us</a>
               <a href="../resrvation/reservation.php" class="tit ms-3">Reservation</a>
               <a href="#" class="tit" style="margin-left:17%; margin-right:17%">ELYSIUM</a>
               <a href="../menu/menu.php" class="tit ms-3">Menu</a>
