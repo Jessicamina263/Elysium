@@ -13,7 +13,7 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 # Set the DirectoryIndex to default to the home.php in the user folder
 RUN echo "DirectoryIndex user/home/home.php" >> /etc/apache2/apache2.conf
 
-# Set the DocumentRoot to serve files from /restaurant/user/home
+# Set the DocumentRoot to serve files from /user/home
 RUN echo "DocumentRoot /var/www/html/restaurant/user/home" >> /etc/apache2/sites-available/000-default.conf
 
 # Ensure Apache serves the user/home directory
@@ -27,9 +27,6 @@ COPY . /var/www/html/
 
 # Set the working directory
 WORKDIR /var/www/html/
-
-# Ensure the files have the right permissions
-RUN chmod -R 755 /var/www/html/restaurant/user/home
 
 # Expose port 8080 for Railway
 EXPOSE 8080
