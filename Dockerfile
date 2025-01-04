@@ -10,10 +10,6 @@ RUN a2enmod rewrite
 # Set the ServerName directive to suppress the warning
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
-# Modify Apache config to listen on port 8080
-RUN sed -i 's/80/8080/' /etc/apache2/ports.conf
-RUN sed -i 's/:80>/:8080>/' /etc/apache2/sites-available/000-default.conf
-
 # Copy your application code into the container
 COPY . /var/www/html/
 
