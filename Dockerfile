@@ -11,16 +11,7 @@ RUN a2enmod rewrite
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 # Set the DirectoryIndex to default to the home.php in the user folder
-RUN echo "DirectoryIndex /restaurant/user/home/home.php" >> /etc/apache2/apache2.conf
-
-# Set the DocumentRoot to serve files from /restaurant/user/home
-RUN echo "DocumentRoot /var/www/html/restaurant/user/home" >> /etc/apache2/sites-available/000-default.conf
-
-# Allow access to the /restaurant/user/home directory
-RUN echo "<Directory /var/www/html/restaurant/user/home>" >> /etc/apache2/apache2.conf
-RUN echo "    AllowOverride All" >> /etc/apache2/apache2.conf
-RUN echo "    Require all granted" >> /etc/apache2/apache2.conf
-RUN echo "</Directory>" >> /etc/apache2/apache2.conf
+RUN echo "DirectoryIndex user/home/home.php" >> /etc/apache2/apache2.conf
 
 # Copy your application code into the container
 COPY . /var/www/html/
@@ -28,11 +19,13 @@ COPY . /var/www/html/
 # Set the working directory
 WORKDIR /var/www/html/
 
-# Ensure the files have the right permissions
-RUN chmod -R 755 /var/www/html/restaurant/user/home
-
 # Expose port 8080 for Railway
 EXPOSE 8080
+
+# Allow .htaccess overrides
+RUN echo "<Directory /var/www/html/>" >> /etc/apache2/apache2.conf
+RUN echo "    AllowOverride All" >> /etc/apache2/apache2.conf
+RUN echo "</Directory>" >> /etc/apache2/apache2.conf
 
 # Start Apache and make sure it listens on port 8080
 CMD ["apache2-foreground"]
