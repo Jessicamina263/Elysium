@@ -11,7 +11,7 @@ RUN a2enmod rewrite
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 # Set the DirectoryIndex to default to the home.php in the user folder
-RUN echo "DirectoryIndex admin/login/login.php" >> /etc/apache2/apache2.conf
+RUN echo "DirectoryIndex user/home/home.php" >> /etc/apache2/apache2.conf
 
 # Copy your application code into the container
 COPY . /var/www/html/
