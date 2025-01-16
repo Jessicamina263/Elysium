@@ -130,6 +130,7 @@ nav
         url(assets/Interior-Design-The-Bar.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     z-index: 0; /* Ensure it’s above .arcanimate */
 }

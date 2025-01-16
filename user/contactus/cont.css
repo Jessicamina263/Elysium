@@ -86,6 +86,7 @@ nav
    url('assets/InteriorDesign_OulipOVeerays-13.jpg'); /* Replace with your image URL */
   background-size: cover; /* Scale the image to cover the section */
   background-position: center; /* Center the image */
+  background-attachment: fixed;
   display: flex; /* Use flexbox to center content */
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
