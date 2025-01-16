@@ -10,6 +10,9 @@ RUN a2enmod rewrite
 # Set the ServerName directive to suppress the warning
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
+# Set the DirectoryIndex to default to the home.php in the user folder
+RUN echo "DirectoryIndex /user/home/home.php" >> /etc/apache2/apache2.conf
+
 # Allow .htaccess overrides
 RUN echo "<Directory /var/www/html/>" >> /etc/apache2/apache2.conf
 RUN echo "    AllowOverride All" >> /etc/apache2/apache2.conf
@@ -22,8 +25,11 @@ COPY . /var/www/html/
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html
 
-# Expose port 80 for Railway or local access
-EXPOSE 80
+# Expose port 8080 for Railway or local access
+EXPOSE 8080
 
-# Start Apache
+# Start Apache and ensure it listens on port 8080
 CMD ["apache2-foreground"]
+
+# Ensure the environment variable is set to listen on port 8080
+ENV APACHE_LISTEN 8080
