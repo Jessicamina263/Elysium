@@ -20,7 +20,7 @@
                         <div class=" ps-5 pe-3" style="margin-left: 18%">
                             <a href="../about/about.php" class="tit">About us</a>
                             <a href="../resrvation/reservation.php" class="tit ms-3">Reservation</a>
-                            <a href="../home/home.php" class="tit" style="margin-left:17%; margin-right:17%">ELYSIUM</a>
+                            <a href="../home.html" class="tit" style="margin-left:17%; margin-right:17%">ELYSIUM</a>
                             <a class="tit ms-3">Menu</a>
                             <a href="../contactus/cont.php" class="tit ms-3">Contact us</a>
                         </div>
