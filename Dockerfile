@@ -11,7 +11,7 @@ RUN a2enmod rewrite
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 # Set the DirectoryIndex to default to the home.php in the user folder
-RUN echo "DirectoryIndex /var/www/html/user/home/home.php" >> /etc/apache2/apache2.conf
+RUN echo "DirectoryIndex /var/www/html/user/home.html" >> /etc/apache2/apache2.conf
 
 # Allow .htaccess overrides
 RUN echo "<Directory /var/www/html/>" >> /etc/apache2/apache2.conf
