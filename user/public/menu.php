@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="../e.ico">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="icon" type="image/x-icon" href="../assets/icons/eee (1).ico">
 </head>
 <body>
     <div>
@@ -18,11 +18,11 @@
                 <nav class="row m-0" style="color: transparent; background-color:transparent">
                     <div class="container-fluid  my-1 row  my-2 justify-content-center align-items-center ms-5">
                         <div class=" ps-5 pe-3" style="margin-left: 18%">
-                            <a href="../about/about.php" class="tit">About us</a>
-                            <a href="../resrvation/reservation.php" class="tit ms-3">Reservation</a>
-                            <a href="../home.html" class="tit" style="margin-left:17%; margin-right:17%">ELYSIUM</a>
+                            <a href="./about.php" class="tit">About us</a>
+                            <a href="./reserve.php" class="tit ms-3">Reservation</a>
+                            <a href="./home.php" class="tit" style="margin-left:17%; margin-right:17%">ELYSIUM</a>
                             <a class="tit ms-3">Menu</a>
-                            <a href="../contactus/cont.php" class="tit ms-3">Contact us</a>
+                            <a href="./cont.php" class="tit ms-3">Contact us</a>
                         </div>
                     </div>
                 </nav>
@@ -66,11 +66,12 @@
                                     echo '<div class="row w-100 justify-content-center">';
                                     
                                     foreach ($chunk as $row) {
-                                        $imagePath = "../menu/assets/" . htmlspecialchars($row['prodtype']) . "/" . htmlspecialchars($row['prodimage']);
+                                        $imagePath = "../assets/images/menu/" . htmlspecialchars($row['prodtype']) . "/" . htmlspecialchars($row['prodimage']);
+                                        $imagealt = htmlspecialchars($row['prodimage']);
                                         echo '<div class="col-3" data-prodtype="' . htmlspecialchars($row['prodtype']) . '" data-prodname="' . htmlspecialchars($row['prodname']) . '" data-prodprice="' . htmlspecialchars($row['prodprice']) . '" data-proddesc="' . htmlspecialchars($row['proddesc']) . '" data-prodimage="' . htmlspecialchars($row['prodimage']) . '" data-chefname="' . htmlspecialchars($row['chefname']) . '" data-prodrate="' . htmlspecialchars($row['prodrate']) . '">';
                                         echo "
                                             <div class='card text-center'>
-                                                <img src='$imagePath' class='card-img-top' alt='Product Image' style='height: 200px; object-fit: cover; opacity: 0.95;'>
+                                                <img src='$imagePath' class='card-img-top' alt='$imagealt' style='height: 200px; object-fit: cover; opacity: 0.95;'>
                                                 <div class='card-body'>
                                                     <h5 class='card-title' style='font-size: 17px; font-weight: bold;'>" . htmlspecialchars($row['prodtype']) . "</h5>
                                                     <h6 class='card-subtitle mb-2'>" . htmlspecialchars($row['prodname']) . "</h6>
@@ -94,7 +95,6 @@
                     </div>
                 </div>
             </div>
-
             <div>
                 <div class="arcanimate"></div>
                 <div id="filteredCarousel" class="carousel-container">
@@ -215,7 +215,7 @@
                     const proddetails = document.querySelector('.proddetails');
                     proddetails.innerHTML = `
                         <div style="display: flex">
-                            <img src="assets/${prodType}/${prodImage}" alt="" style="width: 400px; height: 400px;">
+                            <img src="../assets/images/menu/${prodType}/${prodImage}" alt="" style="width: 400px; height: 400px;">
                             <div class="product-detail-content" style="text-align: center; margin-left: 40%">
                                 <div id="rateBox" 
                                     style="font-size: 20px; font-weight: bold; color: black; width: 60px; margin-left: 45%; border-radius: 20px; height: 90px;">

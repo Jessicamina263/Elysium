@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ELYSIUM - Contact Page</title>
-    <link rel="stylesheet" href="cont.css">
     <!-- for icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -13,8 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+TAS+Guides&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Cinzel+Decorative:wght@400;700;900&family=Italianno&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+TAS+Guides&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="home.css">
-  <link rel="icon" type="image/x-icon" href="../e.ico">
+  <link rel="icon" type="image/x-icon" href="../assets/icons/eee (1).ico">
+  <link rel="stylesheet" href="../assets/css/cont.css">
 </head>
 
 
@@ -23,10 +22,10 @@
     <nav class="row m-0" style="color: transparent; background-color:transparent">
       <div class="container-fluid  my-1 row  my-2 justify-content-center align-items-center ms-5">
         <div class=" ps-5 pe-3" style="margin-left: 18%">
-          <a href="../about/about.php" class="tit">About us</a>
-          <a href="../resrvation/reservation.php" class="tit ms-3">Reservation</a>
-          <a href="../home.html" class="tit" style="margin-left:17%; margin-right:17%">ELYSIUM</a>
-          <a href="../menu/menu.php" class="tit ms-3">Menu</a>
+          <a href="./about.php" class="tit">About us</a>
+          <a href="./reserve.php" class="tit ms-3">Reservation</a>
+          <a href="./home.php" class="tit" style="margin-left:17%; margin-right:17%">ELYSIUM</a>
+          <a href="./menu.php" class="tit ms-3">Menu</a>
           <a class="tit ms-3">Contact us</a>
         </div>
       </div>
@@ -39,7 +38,7 @@
    
     <div class="box-section d-flex justify-content-center align-items-center row">
     <div class="col-5 p-5 h-100 d-flex justify-content-center align-items-center">
-    <div class="img ">
+    <div class="img">
     </div>
     </div>   
       <div class="boxes-container col-6 p-5 justify-content-center align-items-center column">
@@ -84,7 +83,7 @@
  
     </div>
     <div style="background-color: #10231b; margin: 0%;" class="d-flex justify-content-center align-items-center">
-    <form action ="" method="POST">
+      <form action ="" method="POST" style="margin-bottom: 3%">
                 <h2 ><b>Contact Us</b></h2>
                 <br><br>
                 <label for="name">Name</label>
@@ -100,13 +99,13 @@
                 <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
                 <br><br>
                 <button type="submit"name="submit">Submit</button>
-   
-            </form></div>
+            </form>
+          </div>
     <div class="image-container">
-      <img src="assets/A steak and a glass of red wine are on a table_ _ Premium AI-generated image.jpeg"  alt="image 1">
-      <img src="assets/3a7ab5107124863.5fa01a6ce358e.jpg" alt="image 2">
-      <img src="assets/download (1).jpeg"alt="image 3" >
-      <img src="assets/download.jpeg" alt="image 4" >
+      <img src="../assets/images/contact/A steak and a glass of red wine are on a table_ _ Premium AI-generated image.jpeg"  alt="image 1">
+      <img src="../assets/images/contact/3a7ab5107124863.5fa01a6ce358e.jpg" alt="image 2">
+      <img src="../assets/images/contact/download (1).jpeg"alt="image 3" >
+      <img src="../assets/images/contact/download.jpeg" alt="image 4" >
   </div>
   
 </body>

@@ -12,6 +12,7 @@ body
     height: 100vh;
     overflow-x: hidden;
 }
+url
 .imgstyle
 {
     width: auto;
@@ -127,7 +128,7 @@ nav
     position: relative; /* Create stacking context for .main */
     background: 
         linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-        url(assets/Interior-Design-The-Bar.jpg);
+        url(../images/menu/Interior-Design-The-Bar.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

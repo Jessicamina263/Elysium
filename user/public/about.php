@@ -8,9 +8,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ELYSIUM - About Page</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../assets/css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/x-icon" href="../e.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/icons/eee (1).ico">
 </head>
 <body>
     <div class="d1 m-0 p-0">
@@ -18,10 +18,10 @@
         <div class="container-fluid  my-1 row  my-2 justify-content-center align-items-center ms-5">
           <div class=" ps-5 pe-3" style="margin-top: 0.5%">
               <a href="#" class="tit">About us</a>
-              <a href="../resrvation/reservation.php" class="tit ms-3">Reservation</a>
-              <a href="../home.html" class="tit" style="margin-left:17%; margin-right:17%">ELYSIUM</a>
-              <a href="../menu/menu.php" class="tit ms-3">Menu</a>
-              <a href="../contactus/cont.php" class="tit ms-3">Contact us</a>
+              <a href="./reserve.php" class="tit ms-3">Reservation</a>
+              <a href="./home.php" class="tit" style="margin-left:17%; margin-right:17%">ELYSIUM</a>
+              <a href="./menu.php" class="tit ms-3">Menu</a>
+              <a href="./cont.php" class="tit ms-3">Contact us</a>
             </div>
           </div>
       </nav>
@@ -47,7 +47,7 @@
                         <p>Step into an atmosphere where charm meets sophistication. The warm ambiance, coupled with impeccable service, makes every visit unforgettable. From fresh, locally sourced ingredients to innovative dishes.</p>
                         <a href="#" class="btn btn-secondary">LEARN MORE</a>
                     </div>
-                    <img src="images/WhatsApp Image 2024-12-11 at 18.11.44_3e3f643f.jpg" alt="food">
+                    <img src="../assets/images/about/WhatsApp Image 2024-12-11 at 18.11.44_3e3f643f.jpg" alt="food">
                 </div>
             </div>
         </section>
@@ -59,22 +59,22 @@
                     </div>
                     <div class="gallery">
                         <div class="gallery-item">
-                            <img src="images/WhatsApp Image 2024-12-11 at 19.03.19_8c9d9eec.jpg" alt="Gallery Image 1">
+                            <img src="../assets/images/about/WhatsApp Image 2024-12-11 at 19.03.19_8c9d9eec.jpg" alt="Gallery Image 1">
                         </div>
                         <div class="gallery-item">
-                            <img src="images/WhatsApp Image 2024-12-11 at 19.03.22_1c00bd1e.jpg" alt="Gallery Image 2">
+                            <img src="../assets/images/about/WhatsApp Image 2024-12-11 at 19.03.22_1c00bd1e.jpg" alt="Gallery Image 2">
                         </div>
                         <div class="gallery-item">
-                            <img src="images/WhatsApp Image 2024-12-11 at 19.03.22_631c5f10.jpg" alt="Gallery Image 3">
+                            <img src="../assets/images/about/WhatsApp Image 2024-12-11 at 19.03.22_631c5f10.jpg" alt="Gallery Image 3">
                         </div>
                         <div class="gallery-item">
-                            <img src="images/WhatsApp Image 2024-12-11 at 19.03.23_5fac4bc9.jpg" alt="Gallery Image 4">
+                            <img src="../assets/images/about/WhatsApp Image 2024-12-11 at 19.03.23_5fac4bc9.jpg" alt="Gallery Image 4">
                         </div>
                         <div class="gallery-item">
-                            <img src="images/WhatsApp Image 2024-12-11 at 19.03.23_1be2eff7.jpg" alt="Gallery Image 5">
+                            <img src="../assets/images/about/WhatsApp Image 2024-12-11 at 19.03.23_1be2eff7.jpg" alt="Gallery Image 5">
                         </div>
                         <div class="gallery-item">
-                            <img src="images/WhatsApp Image 2024-12-11 at 19.08.45_6f9899e5.jpg" alt="Gallery Image 6">
+                            <img src="../assets/images/about/WhatsApp Image 2024-12-11 at 19.08.45_6f9899e5.jpg" alt="Gallery Image 6">
                         </div>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                                 
                                 echo "
                                 <div class='card'>
-                                    <img src='images/$chefimage' alt='$chefname'>
+                                    <img src='../assets/images/about/$chefimage' alt='$chefname'>
                                     <h3 class='card-title'>Chef $chefname</h3>
                                     <p>$specialty</p>
                                 </div>";

@@ -274,7 +274,7 @@ ul
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('images/about.png'); 
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('../images/about/about.png'); 
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed; 
