@@ -24,24 +24,6 @@ ELYSIUM provides a platform to enhance customer engagement and streamline admini
 
 # *Features:*
 
-# Admin Dashboard
-The admin panel includes tools for managing restaurant operations effectively. Key features include:
-
-1. **Product Management**:
-   - Add, delete, and edit products (menu items).
-
-2. **Dashboards**:
-   - **Contact Dashboard**: Manage customer inquiries and feedback.  
-   - **Reservation Dashboard**: Oversee reservations and track availability.  
-   - **Employment Dashboard**: Add chefs and manage employee records.  
-   - **Admin Management Dashboard**:
-     - Add, delete, and update admin accounts.
-     - Manage admin authorization levels and permissions.
-
-3. **Authentication**:
-   - Access to the admin dashboard is restricted to logged-in users.
-
-
 # User Pages
 The user interface is designed to provide a smooth experience for customers. Key features include:
 
