@@ -1,5 +1,9 @@
 RewriteEngine On
 
+# Exclude static files from being rewritten
+RewriteCond %{REQUEST_FILENAME} \.(css|js|ico|jpg|jpeg|png|gif|svg)$ [NC]
+RewriteRule ^ - [L]
+
 # Remove the .php extension from URLs
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
