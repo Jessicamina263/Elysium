@@ -1,0 +1,112 @@
+/* Existing Styles */
+footer {
+  background-color: #0d1d12;
+  color: #f2f2f2;
+  padding: 3rem 1rem;
+  width: 100%;
+  z-index: 9999;
+  bottom: 0;
+  font-family: "system-ui"; /* Add font family here */
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+footer .col {
+  flex: 1 1 250px;
+  min-width: 250px;
+}
+
+footer .col h3 {
+  font-size: 18px;
+  margin-bottom: 1rem;
+  color: #d8b67b;
+  position: relative;
+}
+
+footer .col h3::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #d8b67b;
+  margin-top: 5px;
+}
+
+footer .col p {
+  font-size: 14px;
+  margin-bottom: 1rem;
+  color: #aaa;
+}
+
+footer .social a {
+  color: #d8b67b;
+  font-size: 18px;
+  margin-right: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .social a:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+footer .links a {
+  display: block;
+  text-decoration: none;
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .links a:hover {
+  color: #d8b67b;
+  transform: translateX(5px);
+}
+
+footer .contact-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer .contact-details i {
+  font-size: 18px;
+  color: #d8b67b;
+}
+
+/* New Styles for Custom Footer Types */
+footer.about {
+  background-color: #3d0d18; /* Dark red background for about page */
+  font-family: "system-ui";
+  height: 300px;
+}
+
+footer.reserve {
+  background-color: #3d0d18; /* Dark red background for reserve page */
+  font-family: "system-ui";
+}
+
+/* Footer for Menu Page */
+footer.menu {
+  position: absolute; /* Position the footer absolutely */
+  top: 200%; /* Place the footer at 200% from the top */
+  background-color: #0d1d12; /* Default background color */
+  font-family: "system-ui";
+  height: 300px;
+  width: 100%;
+}

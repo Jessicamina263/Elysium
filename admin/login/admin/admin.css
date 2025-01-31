@@ -1,0 +1,218 @@
+html
+{
+    scroll-behavior: smooth;
+}
+body 
+{
+    font-family: 'Playfair Display', serif;
+    background-color: #f4e8dc;
+    color: #3d0d18;
+    margin: 0;
+    padding: 0;
+}.manipulation{
+    background-color: transparent;
+    border: none;
+    color: #3d0d18;
+}
+.add{
+    border-top: 3px solid #551212;
+}
+.checkbox {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+}
+
+.checkbox label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.checkbox input[type="radio"] {
+    margin-right: 5px; 
+}
+
+.dashboard-container 
+{
+    margin: 50px auto;
+    background: white;
+    padding: 40px 50px;
+    
+    border-radius: 20px;
+    width: 90%;
+    max-width: 1000px;
+    height: 750px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.header h1 
+{
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2.5rem;
+    color: #803333;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+.header h2.title 
+{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #3d0d18;
+    margin-bottom: 20px;
+}
+.table{
+height: 25%;
+overflow-y: scroll;
+}
+.table th 
+{
+    background-color: #803333;
+    color: #f4e8dc;
+    border: none;
+}
+.table-striped tbody tr:nth-of-type(odd) 
+{
+    background-color: #f2f2f2;
+}
+.table-striped tbody tr:nth-of-type(even) 
+{
+    background-color: #ffffff;
+}
+.table td,
+.table th 
+{
+    text-align: center;
+    border: none;
+    
+}
+.table td 
+{
+    color: #3d0d18;
+}
+.table 
+{
+    border-radius: 15px;
+    overflow: hidden;
+}
+.optionsbtns
+{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.optionsbtns i
+{
+    font-size: 22px;
+    color: #571222;
+}
+.divbtns
+{
+    position: absolute;
+    left: 21.2%;
+    top: 13%;
+}
+.optionsbtns:hover
+{
+    background-color: #bebebe;
+}
+.login-form {
+    margin-left: 20%;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    
+    flex-direction: column;
+    padding: 5%;
+    border-radius: 8px;
+    width: 70%;
+  }
+  
+  .login-form h2 {
+   
+    text-align: center;
+  }
+  
+  .login-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  margin-top: 3%;
+  background:linear-gradient(rgba(208, 185, 144, 0.5)
+,rgba(208, 185, 144, 0.5)
+);
+  }
+  
+  .login-form input {
+    width: 70%;
+    padding: 10px;
+    height: 10%;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .info{
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #d0b990 !important;
+  font-size: 150%;
+  font-weight: 700;
+}
+  .cinzel-decorative-regular {
+    font-family: "Cinzel Decorative", serif;
+    margin-bottom: 0% !important;
+   
+    margin-left: 0%;
+    margin-top: 2%;
+    font-weight: 400;
+    text-align: center;
+  font-weight: bold;
+  color: #d3c793 !important;
+    font-style: normal;
+    font-size: 500%;
+    text-decoration: none;
+     
+  }
+  .login-form button {
+    width: 50%;
+    padding: 0.5%;
+    margin-top: 1%;
+   margin-left: 20%;
+   margin-bottom: 0%;
+    background-color:#803333  ;
+    color:  #f2f2f2;
+    font-family: "Playfair Display", serif;
+    border: none;
+    font-size: 140%;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .login-form label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 140%;
+   margin-top: 0%;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 5px;
+    color: #3f1010;
+  }
+  
+  .login-form button:hover {
+    background-color: #380a0a;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.9em;
+  }
+  

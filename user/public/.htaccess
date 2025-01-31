@@ -1,0 +1,10 @@
+# Enable mod_rewrite
+RewriteEngine On
+
+# If the requested URL is a directory, rewrite to public/home.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/home.php [L]
+
+# Alternatively, you can redirect all requests to public/home.php if you're using a single page
+# RewriteRule ^$ public/home.php [L]

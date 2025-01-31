@@ -1,0 +1,95 @@
+html
+{
+    scroll-behavior: smooth;
+}
+body 
+{
+    font-family: 'Playfair Display', serif;
+    background-color: #f4e8dc;
+    color: #3d0d18;
+    margin: 0;
+    padding: 0;
+}
+.dashboard-container 
+{
+    margin: 50px auto;
+    background: white;
+    padding: 40px 50px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 1000px;
+    height: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.header h1 
+{
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2.5rem;
+    color: #803333;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+.header h2.title 
+{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #3d0d18;
+    margin-bottom: 20px;
+}
+.table th 
+{
+    background-color: #803333;
+    color: #f4e8dc;
+    border: none;
+}
+.table-striped tbody tr:nth-of-type(odd) 
+{
+    background-color: #f2f2f2;
+}
+.table-striped tbody tr:nth-of-type(even) 
+{
+    background-color: #ffffff;
+}
+.table td,
+.table th 
+{
+    text-align: center;
+    border: none;
+    
+}
+.table td 
+{
+    color: #3d0d18;
+}
+.table 
+{
+    border-radius: 15px;
+    overflow: hidden;
+}
+.optionsbtns
+{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.optionsbtns i
+{
+    font-size: 22px;
+    color: #571222;
+}
+.divbtns
+{
+    position: absolute;
+    left: 21.2%;
+    top: 13%;
+}
+.optionsbtns:hover
+{
+    background-color: #bebebe;
+}

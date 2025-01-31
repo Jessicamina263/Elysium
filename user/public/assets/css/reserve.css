@@ -1,0 +1,123 @@
+/* General Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #310404 ;
+}
+.header-image {
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url(../images/reserve/image\ \(5\).png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.header-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.header-text {
+    /* position: absolute; */
+    /* top: 60%;
+    left: 25%; */
+    text-align: center;
+    font-size: 900%;
+    color: rgb(100, 6, 6);
+    font-weight: bolder;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    /* font-family: "Cinzel Decorative", serif; */
+}.header-text h1{
+  text-align: center;
+  font-size: 50%;
+  color: #bda783;
+  opacity: 0.9;
+  font-weight: bolder;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  font-family: "Cinzel Decorative", serif;
+}
+
+
+/* Form Container */
+
+.form-container {
+    background-color: #f0dbb3 ;
+    
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #803333;
+  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
+}
+
+.form-container h2 {
+    color: #803333;
+    
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: #f8e4d0;
+    color: #3d0d18;
+    border: 1px solid #803333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #d8b67b;
+    box-shadow: 0 0 5px #d8b67b;
+}
+
+.btn-custom {
+    background-color:#310404;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-custom:hover {
+    background-color: #d8b67b;
+    /* Gold */
+    color: #3d0d18;
+    /* Burgundy */
+    transform: translateY(-3px);
+    /* Lift effect */
+}
+
+
+/* Gallery Section */
+
+.gallery {
+    background-color: #0d1d12;
+    padding: 2rem 0;
+}
+
+.text-navy {
+    color: #bda783;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 600;
+}
+
+.gallery-img {
+    border: 2px solid #bda783;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}

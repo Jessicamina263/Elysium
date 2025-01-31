@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cinzel-decorative-regular 
+{
+    font-family: "Cinzel Decorative", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    color: #d3c793 !important;
+    font-style: normal;
+    font-size: 400%;
+    text-decoration: none;
+     
+}
+html 
+{
+    scroll-behavior: smooth;
+}
+body 
+{
+    font-family: "Quicksand", sans-serif;
+}
+a 
+{
+    text-decoration: none;
+    color: #fff;
+}
+ul 
+{
+    list-style: none;
+}
+.container 
+{
+    max-width: 1100px;
+    margin: auto;
+}.btn 
+{
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#about 
+{
+    height: 80vh;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about .title,
+#offers .title,
+#menu .title 
+{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+#about h2,
+#offers h2,
+#menu h2 
+{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#about h2 
+{
+    color:#3d0d18;
+    font-family: "Cinzel Decorative", serif;
+}
+#about .title p 
+{
+    font-weight: 600;
+    font-size: 14px;
+    color:  #3d0d18;
+    font-family: "Cinzel Decorative", serif;
+}
+#about .about-content 
+{
+    display: flex;
+    justify-content: space-between;
+}
+#about .about-content p 
+{
+    margin-right: 7rem;
+    line-height: 1.6;
+    color: #10231b;
+    font-weight: 500;
+}
+#about img 
+{
+  max-width: 450px;
+}
+#about .about-content a 
+{
+    margin-top: 2rem;
+}
+@media (max-width: 1000px) 
+{
+    #about 
+    {
+        height: auto;
+        padding: 4rem 2rem;
+    }
+    #about .about-content p 
+    {
+        margin-right: 2rem;
+    }
+    #about img 
+    {
+        width: 250px;
+    }
+    #contact .contact-content 
+    {
+        flex-direction: column;
+    }
+}
+@media (max-width: 600px) 
+{
+    #about .about-content 
+    {
+      flex-direction: column;
+    }
+    #about .about-content a 
+    {
+      margin: 2rem 0;
+    }
+    #about img 
+    {
+      display: none;
+    }
+    #contact .contact-info,
+    form 
+    {
+      width: 80%;
+    }
+}
+#about-me img 
+{
+    width: 100%;
+    height: 100vh; 
+    object-fit: cover; 
+}#about-me 
+{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+#about-me img 
+{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.overlay 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.overlay h1 
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    font-weight: normal; 
+    letter-spacing: 2px; 
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.7); 
+}
+.overlay button 
+{
+    padding: 12px 30px;
+    background-color:#10231b;
+    color: white;
+    border: none;
+    border-radius: 30px; 
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+.overlay button:hover 
+{
+    background-color:#10231b;
+    transform: scale(1.05);
+}.btn-secondary 
+{
+    background-color: #3d0d18; 
+    color: white; 
+    border: none; 
+    padding: 10px 25px; 
+    border-radius: 30px; 
+    font-size: 16px; 
+    text-decoration: none; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}.btn-secondary:hover 
+{
+    background-color:#3d0d18; 
+    transform: scale(1.05); 
+}#our-gallery 
+{
+    background-color: #10231b; 
+    padding: 50px 0;
+    text-align: center;
+}#our-gallery .title h2 
+{
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Lucida Bright', serif;
+    color:  #d8b67b;
+    font-family: "Cinzel Decorative", serif;
+  }
+#our-gallery .title p 
+{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}.gallery 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+}.gallery-item img 
+{
+    width: 100%;
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;
+}.gallery-item img:hover 
+{
+    transform: scale(1.05); 
+}#about-me 
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('../images/about/about.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about-me .overlay 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    text-align: center;
+}#about-me h1 
+{
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: 'Lucida Bright', serif;
+}
+#about-me button 
+{
+    padding: 10px 20px;
+    background-color: #f4e8dc;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #3d0d18;
+    transition: background-color 0.3s ease;
+}
+#about-me button:hover 
+{
+    background-color: #3d0d18;
+    color: #f4e8dc;
+}#master-chef 
+{
+    padding: 70px 20px;
+    background: rgb(255,248,235);
+    background: linear-gradient(90deg, rgba(255,248,235,1) 0%, rgba(255,248,235,1) 24%);
+
+    text-align: center;
+}#master-chef h2 
+{
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #3d0d18;
+    font-family: "Cinzel Decorative", serif;
+  }
+
+.chef-cards 
+{
+    display: flex; 
+    justify-content: space-around; 
+    align-items: stretch;
+    gap: 20px; 
+}.card 
+{
+    background-color: #3d0d18;
+    border-radius: 15px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    width: 22%; 
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card img 
+{
+    width: 100%;
+    border-radius: 10px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.card h3 
+{
+    font-size: 24px;
+    color: #d8b67b;
+    margin-bottom: 12px;
+    
+}.card p 
+{
+    font-size: 18px;
+    color: white;
+}
+.card:hover 
+{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}

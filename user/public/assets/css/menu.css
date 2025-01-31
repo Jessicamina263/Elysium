@@ -1,0 +1,161 @@
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    color: black;
+    background-color: #3d0d0d;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.cinzel-decorative-regular 
+{
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    color: #d3c793 !important;
+    font-style: normal;
+    font-size: 600%;
+    text-decoration: none;
+     
+}
+.arcanimate 
+{
+    background-color: transparent;
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    position: absolute;
+    top: 70%;
+    left: -8%;
+    box-sizing: border-box;
+    border: 100px solid transparent; /* Make the base border transparent */
+    background: linear-gradient(#3d0d0d, #3d0d0d) padding-box, linear-gradient(125deg, rgba(244,232,220,1), rgba(120,88,57,1) 70%) border-box;
+    z-index: -1; /* Place behind .main */
+}
+.main 
+{
+    width: 100vw;
+    height: 100vh;
+    position: relative; /* Create stacking context for .main */
+    background: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url(../images/menu/Interior-Design-The-Bar.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: 0; /* Ensure it’s above .arcanimate */
+}
+
+.main-content 
+{
+    flex-grow: 1;
+}
+.proddetails
+{
+    width: 1200px;
+    background-color: transparent;
+    color: white;
+    z-index: 6000;
+    position: absolute;
+    top: 105%;
+    left: 10%;
+}
+.card
+{
+    width: 80%; 
+    height: 100%; 
+    border: 0;
+    background-color: transparent;
+    color: white;
+}
+.icon-active 
+{
+    background-color: rgb(194, 173, 152);
+    border-radius: 50%;
+    padding: 10px;
+}
+.carousel-container 
+{
+    display: none;
+}
+.carousel-container.active 
+{
+    display: block;
+}
+.carousel-control-prev,
+.carousel-control-next 
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.carousel-control-prev 
+{
+    top: 75%;
+    left: 0%;
+}
+.carousel-control-next 
+{
+    top: 75%;
+    right: 0%;
+}
+/* Center the filtered carousel container */
+#filteredCarousel 
+{
+    display: flex;
+    justify-content: center; 
+    align-items: center; /* Vertically center the carousel */
+    height: 100vh; /* Take full height of the viewport */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-grow: 1; 
+    width: 100%;
+    margin-top: 10%;
+}
+/* Smaller images in the filtered carousel */
+#filteredCarousel .card-img-top 
+{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    opacity: 0.95;
+    margin-left: 15%;
+}
+
+/* Center carousel content within the carousel container */
+#filteredCarouselContent 
+{
+    display: flex;
+    margin-left: 8%;
+}
+.rate-box 
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    width: 60px;
+    margin-left: 45%;
+    border-radius: 20px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+.footerprop
+{
+    position: absolute;
+    top: 200%;
+    left: 0%;
+    width: 100%;
+}

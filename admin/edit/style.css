@@ -1,0 +1,213 @@
+html 
+{
+    scroll-behavior: smooth;
+}
+body 
+{
+    font-family: 'Playfair Display', serif;
+    background-color: #f4e8dc;
+    color: #3d0d18;
+    margin: 0;
+    padding: 0;
+}
+.header h1 
+{
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2.5rem;
+    color: #803333;
+    position: absolute;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    top: 25%;
+    left: 27%;
+}
+.header h2.title 
+{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #3d0d18;
+    margin-bottom: 20px;
+}
+.container 
+{
+    background: white;
+    padding: 40px 50px;
+    border-radius: 20px;
+    max-width: 1000px;
+    min-height: 800px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+.container input
+{
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid rgba(161, 161, 161, 0.76);
+}
+.container input:focus
+{
+    border-color: #3d0d18;
+    outline: none;
+    box-shadow: 0 0 8px #3d0d18;
+}
+
+.subbutton 
+{
+    background-color: #571222;
+    color: #fef8eb;
+    border: 0;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+}
+.subbutton:hover 
+{
+    background-color: #3d0d18;
+}
+.center-btn-container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.optionsbtns
+{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.optionsbtns i
+{
+    font-size: 22px;
+    color: #571222;
+}
+.divbtns
+{
+    position: absolute;
+    left: 21.2%;
+    top: 13%;
+}
+.optionsbtns:hover
+{
+    background-color: #bebebe;
+}
+.search-container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container 
+{
+    width: 80%;
+    max-width: 500px;
+}
+.product-form 
+{
+    background-color: transparent;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+.product-form .form-label 
+{
+    font-size: 16px;
+    font-weight: bold;
+    color: #571222;
+}
+.product-form input,
+.product-form textarea 
+{
+    background-color: transparent;
+    border: 1px solid rgba(161, 161, 161, 0.76);
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.product-form input:focus,
+.product-form textarea:focus 
+{
+    border-color: #571222;
+    box-shadow: 0 0 5px #571222;
+}
+.product-form .icons 
+{
+    font-size: 18px;
+    color: #571222;
+}
+.product-form button
+{
+    background-color: #571222;
+    color: #fef8eb;
+    border: 0;
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+}
+.product-form button:hover
+{
+    background-color: #3d0d18;
+}
+.product-form .dropdown-toggle 
+{
+    background-color: rgba(189, 186, 186, 0.76);
+    color: #571222;
+    font-weight: bold;
+}
+.product-form .dropdown-toggle:hover 
+{
+    background-color: rgba(189, 186, 186, 0.9);
+    color: #571222;
+}
+.product-form .dropdown-menu 
+{
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.product-form .dropdown-item 
+{
+    background-color: white;
+    color: black;
+    font-weight: normal;
+}
+.product-form .dropdown-item:hover 
+{
+    background-color: #d1d1d1be;
+}
+.product-form input[type="file"] 
+{
+    padding: 5px;
+    cursor: pointer;
+}
+.file-input 
+{
+    display: none;
+}
+.custom-file-label 
+{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #571222;
+    font-weight: bold;
+    background-color: rgba(189, 186, 186, 0.76);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+.product-form .file-name 
+{
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 15px;
+}

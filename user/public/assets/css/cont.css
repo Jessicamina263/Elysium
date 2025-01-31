@@ -1,0 +1,166 @@
+body{
+  top:0%;
+  margin-top: 0%;
+}
+.img{
+ background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+ url("../images/contact/trial.jpg") ; 
+ border-radius: 50%;
+ padding: 3%;
+ width:100%;
+ height: 80%;
+ background-size: cover;
+}
+.image-section {
+  height: 100vh; /* Full viewport height */
+  z-index: 1;
+  top:0%;
+  margin: 0%;
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+   url('../images/contact/InteriorDesign_OulipOVeerays-13.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Scale the image to cover the section */
+  background-position: center; /* Center the image */
+  background-attachment: fixed;
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  /* Allows positioning of text */
+}
+
+.image-container {
+background-color: #3d0d18;
+display: flex;
+justify-content: center; /* Center images horizontally */
+align-items: center; /* Align images vertically */
+gap: 10px; /* Space between images */
+padding: 20px;
+}
+
+
+.image-container img {
+width: 250x;
+height: 300px;
+object-fit: cover;
+border-radius: 8px; /* Optional styling */
+}
+
+.text-overlay {
+font-family: "Cinzel Decorative", serif;
+  color: #d8b67b; /* text color */
+  font-size: 500%; /* Adjust the font size */
+  font-weight: bold; /* Make the text bold */
+  
+  text-align: center; /* Center the text within the box */
+  padding: 20px; /* Add padding around the text */
+}
+.boxes-container {
+color:#d8b67b ;
+display: flex;
+height: 80vh;
+flex-direction: column; /* Stack boxes vertically */
+gap: 20px;
+}
+.boxes-container h2{
+font-family: "Cinzel Decorative", serif;
+font-size: 300%;
+color:#d8b67b ;
+}
+.boxes-container h3{
+  font-family: "Playfair Display", serif;
+  font-size: 200%;
+  color:#d8b67b ;
+  }
+.box-section {
+  color:#d8b67b ;
+  height: 100vh; /* Full viewport height */
+  background-color: #3d0d18; /* Light gray background */
+  display: flex; /* Flexbox for horizontal alignment */
+  justify-content: center; /* Center the row of boxes */
+  align-items: center; /* Center boxes vertically */
+  gap: 20px; /* Add space between the boxes */
+  padding: 20px;
+  margin: 0%;
+} .inner-box {
+  color:#d8b67b;
+  width: 700px; /* Fixed width */
+  height: 150px; /* Fixed height */
+  background-color: #3d0d18; /* Box color */
+  border: 2px solid #d8b67b; /* Border for visibility */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #3d0d18;
+}
+.inner-box p{
+color:#d8b67b ;
+}
+form {
+  color:#d8b67b ;
+  max-width: 1000px;
+  height: 650px ;
+ margin:0%;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 1%;
+  padding-top: 2%;
+ 
+  background-color:#10231b; 
+  border-radius: 8px;
+  /* border: 1px solid #d8b67b; */
+}
+form h2{
+font-family: "Cinzel Decorative", serif;
+color:#d8b67b;
+}
+/* Style the label */
+label {
+  color:#d8b67b;
+  display: #d8b67b;
+  font-weight: bold;
+  margin-bottom: 8px; /* Space between label and input */
+}
+
+/* Style the input field */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px; /* Space between form fields */
+  border: 1px solid #3d0d18;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in element's total width */
+}
+textarea{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px; /* Space between form fields */
+  border: 1px solid #3d0d18;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/* Style the button */
+button {
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #070f0c;
+  color:#af9364;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #060e0b;
+}
+.content {
+  padding: 200px;
+  max-width: 800px;
+  margin: 0;  
+  background: linear-gradient(to bottom, #d8b67b, #d8b67b);
+}
